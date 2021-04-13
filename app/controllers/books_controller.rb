@@ -3,12 +3,13 @@ class BooksController < ApplicationController
         @books = Book.all
         @book = Book.new
     end
-    
+
     def create
         book = Book.new(book_params)
         book.save
         redirect_to book_path(book.id)
     end
+
 
     def show
         @book = Book.find(params[:id])
@@ -20,8 +21,12 @@ class BooksController < ApplicationController
 
     def update
         book = Book.find(params[:id])
-        book.update(book_params)
-        redirect_to book_path(book)
+        if book.update(book_params)
+            flash[:notice] = "更新成功"
+            redirect_to book_path(book)
+        else 
+            flash[:notice] = "更新失敗"
+        end
     end
 
     def destroy

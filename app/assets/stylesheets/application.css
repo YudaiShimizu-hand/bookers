@@ -54,8 +54,14 @@
 }
 
 .book-show-2 {
-    float: left;
     width: 20%;
+    float: left;
+}
+
+.show-btn {
+    float: left;
+    width:50px;
+    text-decoration: underline;
 }
 
 
@@ -75,4 +81,34 @@ footer {
     font-size: 20px;
 }
 
+.shows {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.btn-1 {
+    float: left;
+    width:50px;
+    text-decoration: underline;
+}
+
+.edit {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.edit-btn{
+    margin-top: 10px;
+}
+
+.btn-edit{
+    float: left;
+    width:50px;
+    text-decoration: underline;
+}
 
