@@ -24,11 +24,11 @@
     text-decoration: none;
   }
 
-  header {
+  main {
       margin: 20px;
   }
 
-.main-visual{
+ .main-visual {
     margin-top: 30px;
 }
 
@@ -38,7 +38,11 @@
       width: 20%;
   }
 
-   main {
+  .books-content {
+      margin-left: 20px;
+  }
+
+   header {
       margin-left: 10px;
   }
 
