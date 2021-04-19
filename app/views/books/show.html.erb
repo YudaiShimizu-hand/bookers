@@ -1,10 +1,13 @@
-<main>
-    <div class="shows">
-        <h2 class="show-title">Title:</h2>
-        <%= @book.title %>
-        <h2 class="show-body">Body:</h2>
-        <%= @book.body %>
-    </div>
+<table>
+    <tr>
+        <th>Title:</th>
+        <th><%= @book.title %></th>
+    </tr>
+    <tr>
+        <th>Body:</th>
+        <th><%= @book.body %></th>
+    </tr>
+</table>
     <div class="btn">
         <p class="btn-1"><%= link_to "Edit", edit_book_path(@book) %></p>
         <p class="btn-1"><%= link_to "Back", books_path %></p>
