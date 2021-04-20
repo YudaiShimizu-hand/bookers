@@ -65,6 +65,19 @@
     text-decoration: underline;
  }
 
+ .error-message {
+    color:#262626; 
+    background:#FFEBE8;
+    border:2px solid #990000;
+    padding:12px; font-weight:850;
+    width: 40%;
+  }
+ 
+
+ ul {
+     list-style: none;
+ }
+
  .form {
     margin: 20px;
  }
