@@ -23,7 +23,7 @@
     </table>
     <div div class="form">
         <h1>NEW BOOK</h1>
-        <%= form_with model: @book,  url: "/books/#{@book.id}", local:true do |f| %>
+        <%= form_with model: @book, local:true do |f| %>
         <%= render 'books/form', model: f.object %>
                 <%= f.label :title, class: 'form-control' %>
                 <br>
