@@ -65,18 +65,28 @@
     text-decoration: underline;
  }
 
- .error-message {
-    color:#262626; 
-    background:#FFEBE8;
-    border:2px solid #990000;
-    padding:12px; font-weight:850;
+ #error-message {
+    border: 1px solid red;
+    margin: 20px 10px;
     width: 40%;
-  }
- 
+    height: 150px;
+    }
 
- ul {
-     list-style: none;
- }
+.alert-danger {
+        background-color: red;
+        color: white;
+        height: 30px;
+    }
+
+ #error-message ul {
+      color: black;
+      text-align: center;
+      padding: 30px;
+    }
+
+ul {
+        list-style: none;
+    }
 
  .form {
     margin: 20px;

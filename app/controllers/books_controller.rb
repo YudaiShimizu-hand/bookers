@@ -8,9 +8,9 @@ class BooksController < ApplicationController
         @book = Book.new(book_params)
         if @book.save
          flash[:notice] = 'Book was successfully updated'
-         redirect_to book_path(@book.id)
+         redirect_to book_path(@book)
         else
-         @books = Book.all
+        @books = Book.all
          render action: :index
         end
     end

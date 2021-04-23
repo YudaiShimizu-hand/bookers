@@ -1,7 +1,9 @@
 <% if @book.errors.any? %>
- <div class="error-message">
-    <ul style="color: red;">
-        <%= @book.errors.count %>件のエラーが発生しました
+ <div id="error-message">
+    <div class="alert-danger">
+        <%= @book.errors.count %>errors prohibited this book from being saved:
+    </div>
+    <ul>
         <% @book.errors.full_messages.each do |message| %>
         <li style="color: red;"><%= message %></li>
         <% end %>

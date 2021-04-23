@@ -25,13 +25,13 @@
         <h1>NEW BOOK</h1>
         <%= form_with model: @book,  url: "/books/#{@book.id}", local:true do |f| %>
         <%= render 'books/form', model: f.object %>
-                <%= f.label :title %>
+                <%= f.label :title, class: 'form-control' %>
                 <br>
-                <%= f.text_field :title %>
+                <%= f.text_field :title, class: 'form-control' %>
                 <br>
-                <%= f.label :body %>
+                <%= f.label :body, class: 'form-control' %>
                 <br>
-                <%= f.text_area :body %>
+                <%= f.text_area :body, class: 'form-control' %>
                 <br>
                 <%= f.submit 'Create Book' %>
         <% end %>
